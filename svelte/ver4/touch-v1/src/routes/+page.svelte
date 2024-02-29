@@ -29,7 +29,7 @@
 	})
 </script>
 
-<Button on:click={() => console.log('yawa')}>Click me</Button>
+<Button on:click={() => {scannedText = "yawa"}}>Click me</Button>
 <h1>{scannedText}</h1>
 <p>{result}</p>
 <div id="reader" class="outline outline-1" style="width:600px">asdasdasd</div>
