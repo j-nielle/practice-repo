@@ -1,7 +1,3 @@
-// import { dev } from '$app/environment';
-
-// inject({ mode: dev ? 'development' : 'production' });
-
 /** @type {import('./$types').LayoutLoad} */
 export async function load() {
     return {};
