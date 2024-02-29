@@ -25,11 +25,11 @@
 			{ fps: 120, qrbox: { width: 200, height: 200 } },
 			/* verbose= */ false
 		);
-		// html5QrcodeScanner.render(onScanSuccess, onScanFailure);
+		html5QrcodeScanner.render(onScanSuccess, onScanFailure);
 	})
 </script>
 
-<Button on:click={() => {scannedText = "yawa"}}>Click me</Button>
-<h1>{scannedText}</h1>
+<!-- <Button on:click={() => {scannedText = "yawa"}}>Click me</Button> -->
+<h1 class="font-bold">{scannedText}</h1>
 <p>{result}</p>
 <div id="reader" class="outline outline-1" style="width:600px">asdasdasd</div>
