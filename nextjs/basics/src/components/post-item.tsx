@@ -1,21 +1,14 @@
+"use client";
+
 export type PostItemProps = {
-  id: number;
+  id?: number;
   title: string;
-  body: string;
-  userId: number;
-  tags: string[];
-  reactions: number;
 };
 
-export default function PostItem({ id, title, body, userId, tags, reactions }: PostItemProps) {
+export default function PostItem({ id, title }: PostItemProps) {
   return (
-    <>
-      <h2>{title}</h2>
-      <p>{body}</p>
-      <p>Author: {userId}</p>
-      <p>Tags: {tags.join(", ")}</p>
-      <p>Reactions: {reactions}</p>
-      <hr />
-    </>
+    <div className="bg-slate-900 text-white p-5 w-full h-full rounded-sm hover:shadow-xl cursor-pointer">
+      <h2 className="text-wrap text-ellipsis break-words">{title}</h2>
+    </div>
   );
 }
